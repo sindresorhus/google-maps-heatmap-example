@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Google Maps with heatmap</title>
+		<meta name="author" content="Sindre Sorhus">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="sixteen columns">
+				<h1 class="remove-bottom" style="float: left;">Visualizations</h1>
+				<button id="fullscreen-btn">Expand</button>
+				<hr>
+			</div>
+			<div class="sixteen columns">
+				<h3 id="choose-dataset" class="button2">
+					<span>Loading...</span>
+				</h3>
+				<ul id="dataset-menu"></ul>
+				<br style="clear:both">
+				<div id="heatmap-container">
+					<div id="heatmap-area"></div>
+					<div class="insetshadow"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="js/heatmap.js"></script>
+		<script src="js/heatmap-gmaps.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

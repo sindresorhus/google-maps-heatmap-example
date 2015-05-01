@@ -1,0 +1,134 @@
+.container {
+	margin-top: 40px;
+}
+
+#fullscreen-btn {
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+#choose-dataset {
+	background: #e6e6e6;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 28px;
+	height: 48px;
+	padding: 10px;
+	margin-right: 40px;
+	position: relative;
+	margin-top: 1px;
+	top: -10px;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	border-radius: 5px;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#choose-dataset:after {
+	content: '';
+	z-index: -1;
+	background: #e6e6e6;
+	height: 36px;
+	width: 36px;
+	display: inline-block;
+	position: absolute;
+	right: -15px;
+	top: 6px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 4px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	background-clip: content;
+	-webkit-background-clip: content;
+	-moz-background-clip: content;
+	-ms-background-clip: content;
+}
+
+#choose-dataset:hover {
+	text-decoration: underline;
+}
+
+#choose-dataset.click,
+#choose-dataset.click:after {
+	background: #e6e6e6;
+}
+
+#dataset-menu {
+	margin-left: 20px;
+	top: -10px;
+	position: relative;
+	display: none;
+	transition: opacity 1s ease-in-out 0s;
+	-webkit-transition: opacity 1s ease-in-out 0s;
+	-moz-transition: opacity 1s ease-in-out 0s;
+	-ms-transition: opacity 1s ease-in-out 0s;
+}
+
+#dataset-menu li {
+	float: left;
+	margin: 4px 8px;
+	font-size: 18px;
+}
+
+#dataset-menu li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#heatmap-container {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+#heatmap-area {
+	width: 100%;
+	height: 100%;
+	background: #dddddd;
+	border-radius: inherit;
+}
+
+.insetshadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	box-shadow: inset 0 0 5px #000;
+	border-radius: inherit;
+}
+
+.fullscreen .container {
+	margin-top: 10px;
+	position: static;
+}
+
+.fullscreen #fullscreen-btn {
+	background: #eee;
+	color: #7a7a7a;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.fullscreen #heatmap-container {
+	position: absolute;
+	height: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.fullscreen #heatmap-container .insetshadow {
+	box-shadow: inset 0 0 5px #000;
+}
